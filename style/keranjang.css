@@ -1,0 +1,205 @@
+/* RESET DAN FONT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fffaf4;
+  color: #3e2c1c;
+}
+
+/* HEADER */
+.top-bar {
+  background-color: #5b321b;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.top-bar nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.user-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+/* CONTAINER UTAMA */
+.cart-container {
+  max-width: 900px;
+  margin: 2rem auto 6rem; /* kasih space bawah untuk footer fixed */
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* CARD ITEM */
+.cart-item {
+  background: #fffaf4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: relative;
+}
+
+.cart-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-details {
+  flex: 1;
+  min-width: 200px;
+}
+
+.item-details h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.item-details p {
+  margin: 0.1rem 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #4a2d1f;
+}
+
+/* TOMBOL HAPUS */
+.remove a {
+  display: inline-block;
+  background-color: #b23b2e; /* merah kecoklatan untuk hapus */
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.remove a:hover {
+  background-color: #8c2f24;
+}
+
+/* TOTAL PER ITEM */
+.order-total {
+  background: #5c3a2c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* BADGE JUMLAH */
+.quantity-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: #5b321b;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background: #4a2d1f;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-info span {
+  font-size: 0.9rem;
+  display: block;
+}
+
+.payment-info strong {
+  font-size: 1.2rem;
+}
+
+/* TOMBOL CHECKOUT */
+footer button {
+  background: #fff;
+  color: #4a2d1f;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+footer button:hover {
+  background: #f3e8e2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    width: 100%;
+  }
+
+  .remove {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .order-total {
+    border-radius: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  footer button {
+    width: 100%;
+  }
+}

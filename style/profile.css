@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdf4e7;
+  color: #3b2a1a;
+}
+
+header {
+  background-color: #5b362b;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo span {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a, nav i {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 3rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profile-card h2 {
+  margin-bottom: 0.2rem;
+}
+
+.profile-card .subtitle {
+  color: #7a5d4b;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.input-group {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.input-group input {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #c7b1a2;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn.primary {
+  background-color: #5b362b;
+  color: white;
+}
+
+.btn.secondary {
+  background-color: #b5a197;
+  color: white;
+}
+
+.btn.danger {
+  background-color: #eabfb2;
+  color: #5b362b;
+}

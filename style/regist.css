@@ -1,0 +1,147 @@
+/* Reset dan font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf4;
+  color: #3e2c1c;
+  padding-top: 80px; /*sesuai dg tinggi header biar body tdk tenggelam*/
+}
+
+/* Header / Top Bar */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* biar ga ketimpa elemen lain */
+  background-color: #5b321b;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+/* Kontainer Register */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+/* Kotak Form */
+.register-box {
+  background-color: #fffaf0;
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid #d6c5aa;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  width: 500px;
+  max-width: 500px;
+}
+
+.register-box h1 {
+  font-size: 22px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Form dan Input */
+.form-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #3e2c1c;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #d6c5aa;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f9efe3; /* Samakan warna latar */
+}
+
+/* Hilangkan warna aneh dari autofill (Chrome) */
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #f9efe3 inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.pesan-error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Link Login */
+.login-link {
+  font-size: 12px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.login-link a {
+  text-decoration: underline;
+  color: #5a3e2b;
+}
+
+.login-link a:hover {
+  color: #a86e4a;
+}
+
+/* Tombol */
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+
+/* Tombol default (belum aktif) */
+.button-box button {
+  background-color: #c8a88e; /* warna soft */
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  opacity: 0.6;
+  cursor: not-allowed;
+  transition: all 0.3s ease;
+  margin-top: 40px;
+}
+
+/* Saat tombol sudah aktif */
+#registBtn.active {
+  background-color: #8b5e3c; /* warna gelap */
+  opacity: 1;
+  cursor: pointer;
+}

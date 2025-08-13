@@ -1,0 +1,77 @@
+/* Font dan Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf4;
+  color: #3e2c1c;
+}
+
+/* Container Utama */
+.card-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff5e9;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(91, 50, 27, 0.15);
+  border: 1px solid #e0cfc0;
+}
+
+/* Judul */
+.card-container h2 {
+  text-align: center;
+  color: #5b321b;
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Input, Select, Textarea */
+.card-container input[type="text"],
+.card-container input[type="number"],
+.card-container input[type="file"],
+.card-container select,
+.card-container textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 10px 0 20px;
+  border: 1px solid #b89b87;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #3e2c1c;
+}
+
+/* Textarea khusus */
+.card-container textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Tombol */
+.card-container button.add-btn {
+  background-color: #5b321b;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-container button.add-btn:hover {
+  background-color: #3e2c1c;
+}
+
+/* Gambar Preview */
+.card-container img {
+  max-width: 150px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #b89b87;
+}

@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf4;
+  color: #3e2c1c#3e2c1c;
+  padding-top: 80px; /*sesuai dg tinggi header biar body tdk tenggelam*/
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* biar ga ketimpa elemen lain */
+  background-color: #5b321b;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.user-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+/*section produk*/
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  background-color: #fff5e9;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.hero-image img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.hero-text {
+  font-family: 'Poppins', sans-serif;
+  flex: 1;
+  max-width: 50%;
+  padding-left: 2rem;
+}
+
+.hero-text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 0; /* Reset, karena akan dikontrol dari .heading-line */
+  text-align: center;
+}
+
+.heading-line {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.hero-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Ukuran tetap */
+  text-align: center;
+  color: #3e2c1c;
+  line-height: 1.6;
+}
+
+.products {
+  padding: 2rem;
+  background-color: #fff5e9;
+}
+
+.products h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: #5b321b;
+  margin-bottom: 0.5rem;
+}
+
+.products p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  margin-bottom: 2rem;
+  color: #3e2c1c;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* selalu 3 kolom */
+  gap: 1rem;
+  padding: 0 1rem;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.product-item {
+  text-decoration: none; /*a href itu txt nya jadi warna biru dan underline*/
+  display: block; /*biar seluruh kotak bisa di klik*/
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.product-item img {
+  width: 410px;
+  height: 250px; /* Atur tinggi tetap */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.product-item span {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  font-weight: bold;
+  font-size:25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* biar posisi di titik tengah kotak */
+  text-align: center;
+}
+
+/*footer*/
+.footer {
+  background-color: #5b321b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 1rem 1rem 0 0;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.8rem;
+}
+
+.footer-column p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline; 
+}
+
+.social-icons a img {
+  width: 28px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  transition: transform 0.3s;
+  object-fit: cover;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}

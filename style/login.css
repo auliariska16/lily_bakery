@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fffaf4;
+  color: #3e2c1c;
+  padding-top: 80px;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* biar ga ketimpa elemen lain */
+  background-color: #5b321b;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 40px;
+}
+
+.login-card {
+  background-color: #fffaf0;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #d6c5aa;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  width: 100%;
+}
+
+.left-side {
+  flex: 1 1 400px;
+  padding: 40px;
+}
+
+.left-side h1 {
+  font-size: 24px;
+  color: #3b2a1e;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #7a5b4a;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  background-color: #f9efe3;
+  border: 1px solid #d6c5aa;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+/* Hilangkan warna aneh dari autofill (Chrome) */
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #f9efe3 inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+/* Untuk membungkus tombol dan memposisikannya di tengah */
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styling tombol login */
+.login-button {
+  background-color: #c8a88e;      /* warna cokelat muda */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.login-button.active {
+  background-color: #8b5e3c; /* warna gelap */
+  opacity: 1;
+  cursor: pointer;
+}
+
+.login-button:disabled {
+  background-color: #c8a88e;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+.forgot {
+  font-size: 12px;
+  text-align: right;
+  margin-top: -3px;
+  color: #5a3e2b;
+  margin-bottom: 20px;
+}
+
+.forgot a {
+  color: #5a3e2b;
+  text-decoration: underline;
+}
+
+.forgot a:hover {
+  color: #a86e4a;
+}
+
+.form-links {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.signup {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup a {
+  color: #5a3e2b;
+  text-decoration: underline;
+}
+
+.signup a:hover {
+  color: #a86e4a;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.right-side {
+  flex: 1 1 300px;
+  background-color: #fffaf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side img {
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 20px;
+}
